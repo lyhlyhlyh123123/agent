@@ -9,7 +9,7 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.document_loaders import CSVLoader
 from langchain_chroma import Chroma
-embeddings = DashScopeEmbeddings(dashscope_api_key="sk-54c5cde195864e09a43673ca5a930b43")
+embeddings = DashScopeEmbeddings(dashscope_api_key="apikey")
 text = "苹果手机价格多少钱？"
 str_parser = StrOutputParser()
 vectorstore = Chroma(
@@ -33,7 +33,7 @@ vectorstore.add_documents(
 #result = vectorstore.similarity_search(text, k=2)
 
 
-model = Tongyi(api_key="sk-54c5cde195864e09a43673ca5a930b43",model="qwen-max")
+model = Tongyi(api_key="apikey",model="qwen-max")
 
 def print_prompt(prompt):
     print(f"Prompt: {prompt}")

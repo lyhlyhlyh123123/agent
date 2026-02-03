@@ -16,7 +16,7 @@ history_data = [
     ("ai","此去泉台招旧部，旌旗十万斩阎罗"),
 ]
 
-tongyi = Tongyi(api_key="sk-54c5cde195864e09a43673ca5a930b43",model="qwen-max")
+tongyi = Tongyi(api_key="apikey",model="qwen-max")
 chain = chat_template | tongyi
 
 for chunk in chain.stream({"history": history_data}):
@@ -29,7 +29,7 @@ for chunk in chain.stream({"history": history_data}):
 # """
 #
 # prompt = PromptTemplate.from_template(template)
-# tongyi = Tongyi(api_key="sk-54c5cde195864e09a43673ca5a930b43",model="qwen-max")
+# tongyi = Tongyi(api_key="apikey",model="qwen-max")
 # chain = prompt | tongyi
 # res = chain.stream({"question": "给我写一个dfs的代码"})
 #

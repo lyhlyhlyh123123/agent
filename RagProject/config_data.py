@@ -16,8 +16,8 @@ similarity_threshold = 2
 
 embedding_model_name  = "text-embedding-v4"
 chat_model_name = "qwen-max"
-dashscope_api_key  = "sk-54c5cde195864e09a43673ca5a930b43"
-tongyi_api_key = "sk-54c5cde195864e09a43673ca5a930b43"
+dashscope_api_key  = "apikey"
+tongyi_api_key = "apikey"
 
 
 session_config = {

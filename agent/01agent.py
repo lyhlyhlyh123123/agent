@@ -8,7 +8,7 @@ def get_weather():
     return "今天的天气是晴天"
 
 agent = create_agent(
-    model=ChatTongyi(model = "qwen3-max",api_key = "sk-54c5cde195864e09a43673ca5a930b43"),
+    model=ChatTongyi(model = "qwen3-max",api_key = "apikey"),
     tools=[get_weather],
     system_prompt ="你是一个聊天助手，可以回答用户的问题"
 

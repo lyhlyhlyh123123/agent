@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 #本地部署
-client = OpenAI(api_key="sk-54c5cde195864e09a43673ca5a930b43", base_url="http://localhost:11434/v1")
+client = OpenAI(api_key="apikey", base_url="http://localhost:11434/v1")
 
 response = client.chat.completions.create(
     model="qwen3:4b",

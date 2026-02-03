@@ -1,7 +1,7 @@
 from langchain_community.llms.tongyi import Tongyi
 from langchain_ollama import OllamaLLM,OllamaEmbeddings
 
-#tongyi = Tongyi(api_key="sk-54c5cde195864e09a43673ca5a930b43",model="qwen-max")
+#tongyi = Tongyi(api_key="apikey",model="qwen-max")
 
 # tongyi = OllamaLLM(model="qwen3:4b",apikey = "lyh")
 #

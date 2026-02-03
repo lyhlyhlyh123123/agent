@@ -10,7 +10,7 @@ first_prompt = PromptTemplate.from_template("请生成一个长度为{len}的英
 second_prompt = PromptTemplate.from_template("帮我解释{word}的意思")
 
 
-model = Tongyi(api_key="sk-54c5cde195864e09a43673ca5a930b43",model="qwen-max")
+model = Tongyi(api_key="apikey",model="qwen-max")
 
 
 chain = first_prompt | model | json_parser | second_prompt | model | str_parser

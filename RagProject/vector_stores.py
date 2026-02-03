@@ -15,7 +15,7 @@ class VectorStoreService:
         return self.vectorstore.as_retriever(search_kwargs={"k":config.similarity_threshold})
 
 if __name__ == "__main__":
-    embedding = DashScopeEmbeddings(model="text-embedding-v4",dashscope_api_key="sk-54c5cde195864e09a43673ca5a930b43")
+    embedding = DashScopeEmbeddings(model="text-embedding-v4",dashscope_api_key="apikey")
     vectorstore = VectorStoreService(embedding)
     retriever = vectorstore.get_retriever()
     result = retriever.invoke("我的体重180斤，给我合适的尺码")

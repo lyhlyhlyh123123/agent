@@ -3,7 +3,7 @@ from openai import OpenAI
 
 client = OpenAI(
     # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx",
-    api_key="sk-54c5cde195864e09a43673ca5a930b43",
+    api_key="apikey",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 completion = client.chat.completions.create(

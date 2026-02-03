@@ -34,7 +34,7 @@ class KnowledgeBaseService:
 
         self.chroma = Chroma(
             persist_directory=config.persist_directory,
-            embedding_function=DashScopeEmbeddings(model="text-embedding-v4",dashscope_api_key="sk-54c5cde195864e09a43673ca5a930b43"),
+            embedding_function=DashScopeEmbeddings(model="text-embedding-v4",dashscope_api_key="apikey"),
             collection_name=config.collection_name,
         )
         self.splitter = RecursiveCharacterTextSplitter(

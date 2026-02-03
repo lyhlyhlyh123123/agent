@@ -48,7 +48,7 @@ def print_prompt(prompt):
     return prompt
 
 str_parser = StrOutputParser()
-model = Tongyi(api_key="sk-54c5cde195864e09a43673ca5a930b43",model="qwen-max")
+model = Tongyi(api_key="apikey",model="qwen-max")
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "你需要根据历史记录回答的问题"),
